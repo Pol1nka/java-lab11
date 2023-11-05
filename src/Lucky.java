@@ -15,6 +15,13 @@ public class Lucky {
                     System.out.println(tempX);
                     count.incrementAndGet();
                 }
+                try{
+                    Thread.sleep(10);
+                }
+                catch (InterruptedException exc)
+                {
+                    exc.printStackTrace();
+                }
             }
         }
     }
